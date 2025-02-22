@@ -2,6 +2,8 @@
 
 This project is a React weather app that uses the Open Meteo API to fetch weather data for a given location.
 
+Try live demo [HERE](https://weather-ppafu.netlify.app) 😊
+
 ## Features:
 
 📍 display weather based on location
