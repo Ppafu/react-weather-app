@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  scrollbar-gutter: stable;
+}
+
+.cityIcon {
+  margin: auto;
+  & svg {
+    font-size: 10rem;
+    min-width: 10rem;
+    color: hsla(206, 100%, 82%, 0.5);
+  }
+}

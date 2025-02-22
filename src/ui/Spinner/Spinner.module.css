@@ -1,0 +1,13 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-9);
+  width: var(--size-9);
+  aspect-ratio: 1;
+  margin: auto;
+  & svg {
+    font-size: var(--font-size-8);
+    animation: var(--animation-spin);
+  }
+}

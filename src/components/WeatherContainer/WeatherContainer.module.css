@@ -1,0 +1,16 @@
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+  opacity: 0;
+  visibility: hidden;
+
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
+    gap: 0px;
+    padding: var(--size-3);
+  }
+}

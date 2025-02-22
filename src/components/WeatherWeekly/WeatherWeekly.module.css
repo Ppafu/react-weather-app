@@ -1,0 +1,21 @@
+.containerWeatherWeekly {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (min-width: 1024px) {
+    padding-block-end: var(--size-1);
+    width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}

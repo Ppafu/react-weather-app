@@ -1,0 +1,17 @@
+.rowIcon {
+  display: flex;
+  align-items: center;
+  gap: var(--size-1);
+  width: 100%;
+  & svg {
+    font-size: var(--font-size-5);
+  }
+}
+
+.center {
+  justify-content: center;
+}
+
+.start {
+  justify-content: flex-start;
+}

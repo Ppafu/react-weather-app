@@ -1,0 +1,51 @@
+.item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--size-3);
+  list-style: none;
+  cursor: pointer;
+
+  font-size: var(--font-size-2);
+  padding-inline: var(--size-3);
+  padding-block: var(--size-2);
+
+  box-shadow: 0rem -1.5rem 0rem -1.4rem hsla(208, 77%, 47%, 0.15);
+
+  &:first-child {
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:active {
+    background-color: hsla(206, 100%, 82%, 0.5);
+    box-shadow: none;
+  }
+
+  &:focus,
+  &:focus-within {
+    background-color: hsla(206, 100%, 82%, 0.5);
+    box-shadow: none;
+  }
+}
+
+.item:hover + li,
+.item:active + li {
+  box-shadow: none;
+}
+.item:focus + li,
+.item:focus-within + li {
+  box-shadow: none;
+}
+
+.flagName {
+  display: flex;
+  gap: var(--size-2);
+  align-items: center;
+}
+
+.country {
+  display: flex;
+}

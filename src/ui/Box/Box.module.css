@@ -1,0 +1,41 @@
+.box {
+  display: grid;
+  width: calc(100% - 2rem);
+  min-height: 50dvh;
+  height: max-content;
+
+  box-shadow: 8px 8px 20px 0px rgba(0, 10, 50, 0.1);
+
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(77, 171, 247, 0.3),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(at 0% 0%, rgb(246, 255, 253), 33%, rgba(213, 205, 255, 0));
+
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+
+  border-radius: var(--radius-5);
+  border: 0.1rem solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    max-width: 70dvw;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: auto;
+    height: 35rem;
+    aspect-ratio: 1.618/1;
+    grid-row: 1/2;
+    grid-column: 2 / 3;
+
+    align-self: center;
+  }
+}

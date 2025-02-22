@@ -1,0 +1,26 @@
+.buttonIcon {
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+
+  padding: var(--size-1);
+  transition: color 0.3s;
+
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-round);
+
+  outline: transparent;
+  transition: outline 0.3s;
+  transition: color 0.3s;
+  & svg {
+    font-size: var(--font-size-5);
+    min-width: var(--font-size-5);
+    aspect-ratio: 1;
+  }
+}
