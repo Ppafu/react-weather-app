@@ -11,13 +11,13 @@ Try live demo [HERE](https://weather-ppafu.netlify.app) 😊
 
 ## Features:
 
-📍 display weather based on location
+📍 Display weather based on location
 
-🔍 search for a city by name
+🔍 Search for a city by name
 
-☀️ display the current weather conditions
+☀️ Display the current weather conditions
 
-📅 a weekly forecast
+📅 A weekly forecast
 
 ## Development stack:
 
