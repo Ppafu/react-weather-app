@@ -14,3 +14,9 @@
     color: hsla(206, 100%, 82%, 0.5);
   }
 }
+
+.noResults {
+  display: flex;
+  gap: var(--size-1);
+  align-self: center;
+}

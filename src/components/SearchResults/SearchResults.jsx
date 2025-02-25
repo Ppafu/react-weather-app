@@ -52,7 +52,14 @@ function SearchResults({ setCityCoords, setIsOpen }) {
         />
       )}
       <ul className={`fade-in ${styles.list}`}>
-        {!cityName ? null : cityListMemo}
+        {!cityName || !cityList ? (
+          <div className={styles.noResults}>
+            <span>🤔</span>
+            <p>No results, please try another city</p>
+          </div>
+        ) : (
+          cityListMemo
+        )}
       </ul>
     </>
   );

@@ -9,7 +9,6 @@ import {
 import styles from "./WeeklyWeatherItem.module.css";
 
 function WeeklyWeatherItem({ day, dayIndex, weather }) {
-  console.log(day, dayIndex);
   const { setIndex } = useDay();
   if (!weather) return null;
 
