@@ -9,6 +9,7 @@ import {
 import styles from "./WeeklyWeatherItem.module.css";
 
 function WeeklyWeatherItem({ day, dayIndex, weather }) {
+  console.log(day, dayIndex);
   const { setIndex } = useDay();
   if (!weather) return null;
 
@@ -18,7 +19,7 @@ function WeeklyWeatherItem({ day, dayIndex, weather }) {
   const temperature = temperature_2m_max[dayIndex];
 
   const code = isToday ? weather.current.weather_code : weather_code[dayIndex];
-  const dayLabel = isToday ? formatWeekDay(day) : formatWeekDay(dayIndex);
+  const dayLabel = formatWeekDay(day);
 
   function handleKeyPress(e) {
     if (e.key === "Enter") {

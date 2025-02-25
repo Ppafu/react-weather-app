@@ -1,9 +1,8 @@
 # React Weather App
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/161e5b65-bff2-4c40-b715-6f807369bae8" width = "550px">
+<img src="" width = "550px">
 </p>
-
 
 This project is a React weather app that uses the Open Meteo API to fetch weather data for a given location.
 
