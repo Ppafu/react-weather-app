@@ -4,7 +4,7 @@ import ButtonIcon from "../../ui/ButtonIcon/ButtonIcon";
 
 function SearchButton({ onClick, isOpen }) {
   return (
-    <div className={`${styles.searchButton} ${isOpen ? styles.hidden : ""}`}>
+    <div className={styles.searchButton} aria-hidden={isOpen}>
       <ButtonIcon onClick={onClick} tabIndex={0} id={"searchButton"}>
         <MagnifyingGlass />
       </ButtonIcon>
