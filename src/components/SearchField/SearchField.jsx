@@ -35,7 +35,9 @@ function SearchField({ setIsOpen }) {
           onClick={() => {
             setIsOpen(false);
             setCityName("");
-          }}>
+          }}
+          id={"clearButton"}
+          disabled={false}>
           <X />
         </ButtonIcon>
       </div>
