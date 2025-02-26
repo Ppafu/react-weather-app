@@ -12,7 +12,7 @@
 
   height: 100dvh;
   overflow-x: auto;
-  transition: width 0.5s;
+  transition: width 0.5s, visibility 0.5s;
 
   white-space: nowrap;
   @media (min-width: 821px) {
@@ -24,11 +24,12 @@
 
 .hidden {
   width: 0px;
+  visibility: hidden;
 }
 
 :global(.active) {
   width: 100%;
-
+  visibility: visible;
   @media (min-width: 821px) {
     width: 30rem;
   }

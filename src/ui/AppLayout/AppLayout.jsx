@@ -5,10 +5,7 @@ import { useCityName } from "../../contexts/CityNameContext";
 function AppLayout({ children }) {
   const { setCityName } = useCityName();
   return (
-    <div
-      className={styles.containerAppLayout}
-      onClick={() => setCityName("")}
-      onKeyDown={(e) => e.key === "Escape" && setCityName("")}>
+    <div className={styles.containerAppLayout} onClick={() => setCityName("")}>
       {children}
     </div>
   );

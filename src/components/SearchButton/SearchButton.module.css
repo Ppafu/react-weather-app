@@ -12,6 +12,8 @@
   outline: transparent;
   grid-row: 1/2;
 
+  display: block;
+
   &:hover,
   &:active {
     background-color: var(--blue-0);
@@ -50,5 +52,5 @@
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }

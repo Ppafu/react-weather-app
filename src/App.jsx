@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -21,12 +21,33 @@ function App() {
   const [cityCoords, setCityCoords] = useState({});
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    const searchBtn = document.getElementById("searchButton");
+    const handleKeydown = (e) => {
+      if (e.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeydown);
+
+    if (!isOpen) {
+      searchBtn.focus();
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  }, [isOpen]);
+
   return (
     <QueryClientProvider client={queryClient}>
       <DayProvider>
         <CityNameProvider>
           <AppLayout>
-            <SearchButton onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} />
+            <SearchButton
+              onKeyDown={(e) => e.key === "Enter" && setIsOpen(true)}
+              onClick={() => setIsOpen(true)}
+              isOpen={isOpen}
+            />
 
             <SearchContainer
               setCityCoords={setCityCoords}
