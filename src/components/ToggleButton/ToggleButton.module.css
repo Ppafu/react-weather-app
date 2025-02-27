@@ -1,5 +1,5 @@
 .toggleButton {
-  width: 2.69rem;
+  width: var(--size-8);
   aspect-ratio: 1;
   border-radius: var(--radius-round);
   justify-self: end;
@@ -13,8 +13,8 @@
   margin-block-start: var(--size-2);
   margin-inline-end: var(--size-2);
 
+  align-self: flex-start;
   @media (min-width: 1024px) {
-    width: var(--size-8);
     grid-column: 3 / 4;
     grid-row: 1/2;
 

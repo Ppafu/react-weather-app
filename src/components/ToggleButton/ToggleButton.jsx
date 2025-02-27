@@ -1,5 +1,5 @@
-import styles from "./ToggleButton.module.css";
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
+import styles from "./ToggleButton.module.css";
 import ButtonIcon from "../../ui/ButtonIcon/ButtonIcon";
 
 function ToggleButton({ onClick, isOpen }) {
