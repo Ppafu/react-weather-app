@@ -16,6 +16,7 @@
 
   white-space: nowrap;
   gap: 0.75rem;
+  overflow-x: hidden;
   @media (min-width: 821px) {
     grid-row: 1/2;
     grid-column: 3/4;
