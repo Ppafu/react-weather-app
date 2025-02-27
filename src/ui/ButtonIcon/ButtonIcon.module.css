@@ -19,8 +19,6 @@
   transition: outline 0.3s;
   transition: color 0.3s;
   & svg {
-    font-size: var(--font-size-5);
-    min-width: var(--font-size-5);
     aspect-ratio: 1;
   }
 }

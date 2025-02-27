@@ -3,10 +3,11 @@ import styles from "./SearchField.module.css";
 import { useCityName } from "../../contexts/CityNameContext";
 import ButtonIcon from "../../ui/ButtonIcon/ButtonIcon";
 
-function SearchField({ setIsOpen }) {
+function SearchField() {
   const { cityName, setCityName } = useCityName();
 
   function handleInputChange(e) {
+    e.preventDefault();
     const input = e.target.value;
     const isValidInput = /^[a-zA-Za-яА-ЯЁё\s\-/']*$/.test(input);
     if (isValidInput) {
@@ -30,17 +31,18 @@ function SearchField({ setIsOpen }) {
         onKeyDown={handleKeyPress}
         name="search"
       />
-      <div className={styles.clearButton}>
-        <ButtonIcon
-          onClick={() => {
-            setIsOpen(false);
-            setCityName("");
-          }}
-          id={"clearButton"}
-          disabled={false}>
-          <X />
-        </ButtonIcon>
-      </div>
+      {cityName && (
+        <div className={styles.clearButton}>
+          <ButtonIcon
+            onClick={() => {
+              setCityName("");
+            }}
+            id={"clearButton"}
+            disabled={false}>
+            <X />
+          </ButtonIcon>
+        </div>
+      )}
     </div>
   );
 }

@@ -8,7 +8,7 @@ function Search({ setCityCoords, isOpen, setIsOpen }) {
       className={`${styles.SearchContainer} ${
         isOpen ? "active" : styles.hidden
       }`}>
-      <SearchField setIsOpen={setIsOpen} />
+      <SearchField />
       <SearchResults setCityCoords={setCityCoords} setIsOpen={setIsOpen} />
     </aside>
   );

@@ -1,7 +1,7 @@
 import styles from "./Box.module.css";
 
 function Box({ children }) {
-  return <div className={styles.box}>{children}</div>;
+  return <main className={styles.box}>{children}</main>;
 }
 
 export default Box;

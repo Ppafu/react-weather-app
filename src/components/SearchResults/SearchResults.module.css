@@ -4,6 +4,7 @@
   overflow-y: auto;
 
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 .cityIcon {

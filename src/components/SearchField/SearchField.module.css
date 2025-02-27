@@ -12,8 +12,15 @@
   min-height: var(--size-8);
 
   width: auto;
-  margin: var(--size-4);
+  margin-inline: var(--size-4);
+  margin-block-start: var(--size-9);
+
   outline: 2px solid hsla(208, 77%, 47%, 0.2);
+
+  @media (min-width: 1024px) {
+    margin-inline: var(--size-4);
+    margin-block-start: var(--size-10);
+  }
   &:hover,
   &:active {
     outline: 2px solid var(--blue-3);
@@ -44,15 +51,15 @@
 
 .clearButton button {
   color: var(--stone-5);
-}
+  font-size: var(--font-size-4);
+  &:hover,
+  &:active {
+    color: var(--blue-5);
+  }
 
-.clearButton button:hover,
-.clearButton button:active {
-  color: var(--blue-9);
-}
-
-.clearButton button:focus,
-.clearButton button:focus-within {
-  color: var(--blue-9);
-  outline: var(--blue-9) solid 2px;
+  &:focus,
+  &:focus-within {
+    color: var(--blue-5);
+    outline: var(--blue-5) solid 2px;
+  }
 }
