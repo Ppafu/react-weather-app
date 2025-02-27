@@ -6,7 +6,7 @@
 
 This project is a React weather app that uses the Open Meteo API to fetch weather data for a given location.
 
-Try live demo [HERE](https://weather-ppafu.netlify.app) 😊
+Try live demo <a target="_blank" href="https://weather-ppafu.netlify.app">HERE</a> 😊
 
 ## Features:
 
